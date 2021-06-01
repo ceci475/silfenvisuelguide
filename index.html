@@ -4,8 +4,18 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>SILFEN / DIGITAL DESIGNMANUAL</title>
+
   </head>
+
+   <style>
+    html {
+      scroll-snap-type: y mandatory;
+    }
+    .sustainability_col {
+      scroll-snap-align: start;
+    }
+  </style>
   <body>
     <!DOCTYPE html>
     <html lang="en">
@@ -31,10 +41,7 @@
       <body>
        <nav role="navigation" id="nav">
       <div class="header-wrapper">
-        <div class="logo">
-          <a href="index.html"><img src="static/ui-elements/silfen_logo.png" alt="silfenlogo" /></a>
-        </div>
-        
+
       </div>
       <div id="menuToggle">
         <!--
@@ -126,57 +133,48 @@
     </nav>
        
        
-       
-       
 
-        <section id="splash" class="splash py-5 px-4">
-          <div class="container g-0">
-            <div class="row g-0 justify-content-center align-items-left flex-wrap-reverse">
-              <div class="content-txt col-lg-8 text-left">
-                <p class="text-uppercase guidelines"><a href="styleguide.html">guidelines</a></p>
-                <br />
-                <br />
-                <h1 class="mt-5">Visuel brandidentitet</h1>
-                <br />
-                <br />
-                <h3>
-                  Vi definerer guidelines og danner en ramme for, hvem vi <i>er</i>, hvordan vi <i>taler</i> og hvordan vi <i>ser</i> ud. Vi ønsker med denne designmanuel at skabe en tydelig og
-                  konsistent brandtilstedeværelse, der adskiller SILFEN fra deres konkurrenter samt skaber tillid og fortrolighed og ikke mindst fører til langsigtet brandværdi. Vores brandsystem
-                  består af 5 hovedelementer:
-                  </h3>
-                  <li><a href="index.html">Brandprofil</a></li>
-          <li><a href="styleguide.html">Style guide</a></li>
-          <li><a href="komponent.html">Komponent bibliotek</a></li>
-          <li><a href="designsystem.html">Designsystem</a></li>
-          <li><a href="mockups.html">Mockups</a></li>
-              </div>
-            </div>
-          </div>
-        </section>
 
-        <br />
-        <br />
-        <br />
+        <section id="sustainability">
+      <div class="sustainability_text_container">
+        <div class="sustainability_col text1">
+         <h1>Visuel brandidentitet</h1>
+          <p>Vi definerer guidelines og danner en ramme for, hvem vi <i>er</i>, hvordan vi <i>taler</i> og hvordan vi <i>ser</i> ud. Vi ønsker med denne designmanuel at skabe en tydelig og
+                  konsistent brandtilstedeværelse, der adskiller SILFEN fra deres konkurrenter samt skaber tillid og fortrolighed og ikke mindst fører til langsigtet brandværdi. Fælles for alt, hvad vi laver er, at det følger nedenstående hovedprincipper:
+                  </p>
+          <img class="sustainability_image" src="static/clipart/CLIPART_ASSETS1.PNG" />
+        </div>
 
-        <section id="principper" class="principper py-5 px-4">
-          <div class="container g-0">
-            <div class="row g-0 justify-content-center align-items-left flex-wrap-reverse">
-              <p>Fælles for alt, hvad vi laver er, at det følger nedenstående hovedprincipper:</p>
-              <div class="content-txt col-md-6 col-lg-4 text-left">
-                <h2 class="col1">Klarhed</h2>
-                <p>Vi ønsker at fremstå ærlige og autentiske med en varm og engagerende stemme uden at overbelaste brugeren med information.</p>
-              </div>
-            <div class="content-txt col-md-6 col-lg-4 text-left">
-              <h2 class="col1">Inspirere</h2>
-              <p>Vi ønsker, at brugeren skal føle sig inspireret. Inspireret til at udforske sin stil og til at være sig selv.</p>
-            </div>
-            <div class="content-txt col-md-6 col-lg-4 text-left">
-              <h2 class="col1">Empower</h2>
-              <p>Vi ønsker at indkapsle den tillid og selvsikkerhed, som brugerne har brug for til modigt at stå ved, hvem de er.</p>
-            </div>
-          </div>
+        <div class="sustainability_col text2">
+          <h1>Klarhed</h1>
+          <p>
+            Vi ønsker at fremstå ærlige og autentiske med en varm og engagerende stemme uden at overbelaste brugeren med information.
+          </p>
+          <img class="sustainability_image" src="static/clipart/CLIPART_ASSETS2.PNG" />
+        </div>
+        <div class="sustainability_col text3">
+          <h1>Inspirere</h1>
+          <p>
+            Vi ønsker, at brugeren skal føle sig inspireret. Inspireret til at udforske sin stil og til at være sig selv.
+          </p>
+          <img class="sustainability_image" src="static/clipart/CLIPART_ASSETS5.PNG" />
+        </div>
+        <div class="sustainability_col text4">
+          <h1>
+            Empower
+          </h1>
+          <p>
+            Vi ønsker at indkapsle den tillid og selvsikkerhed, som brugerne har brug for til modigt at stå ved, hvem de er.
+          </p>
+          <img class="sustainability_image" src="static/clipart/CLIPART_ASSETS4.PNG" />
+        </div>
            </div>
-        </section>
+      <div class="split sustainability_picture_container">
+        <img class="sus_pic" src="static/clipart/CLIPART_ASSETS3.PNG" alt="1" />
+      </div>
+    </section>
+
+
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -197,5 +195,6 @@
     </html>
 
     <script type="module" src="/main.js"></script>
+     <script type="module" src="/script.js"></script>
   </body>
 </html>

@@ -3,10 +3,87 @@ html {
 }
 
 body {
-  font-family: "Manrope", sans-serif;
+    font-family: "manropelight" !important;
+    font-size: 1rem;
+
+    line-height: 1.5;
 }
 
-/* MENU */
+.sustainability_col {
+    .sustainabilityh1 {
+      text-transform: none;
+      font-family: "manropebold";
+      font-size: 20px;
+      padding: 20vw 4vw 10vw 4vw;
+    }
+    .sustainability_h2 {
+      margin: 7vw 4vw 1vw 4vw;
+      text-transform: none;
+      font-family: "manropebold";
+      font-size: 12px;
+    }
+    .sustainability_link {
+      font-family: "manropeextralight";
+      font-size: 12px;
+      margin-bottom: 7vw;
+    }
+
+  }
+
+
+//Font families
+@font-face {
+  font-family: "manropebold";
+  src: url("fonte/manrope/manrope-bold-webfont.woff2") format("woff2"), url("fonte/manrope/manrope-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "manropeextrabold";
+  src: url("fonte/manrope/manrope-extrabold-webfont.woff2") format("woff2"), url("fonte/manrope/manrope-extrabold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "manropeextralight";
+  src: url("fonte/manrope/manrope-extralight-webfont.woff2") format("woff2"), url("fonte/manrope/manrope-extralight-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "manropelight";
+  src: url("fonte/manrope/manrope-light-webfont.woff2") format("woff2"), url("fonte/manrope/manrope-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "manropemedium";
+  src: url("fonte/manrope/manrope-medium-webfont.woff2") format("woff2"), url("fonte/manrope/manrope-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "manroperegular";
+  src: url("fonte/manrope/manrope-regular-webfont.woff2") format("woff2"), url("fonte/manrope/manrope-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "manropesemibold";
+  src: url("fonte/manrope/manrope-semibold-webfont.woff2") format("woff2"), url("fonte/manrope/manrope-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+figcaption {
+font-size: calc(0.5rem + 0.3vw);}
+
+/****************** MENU START *********************/
 .menuheart,
 .menucart {
   position: relative;
@@ -153,8 +230,7 @@ nav {
 }
 
 /*
-    * Just a quick hamburger
-    */
+    * Just a quick hamburger */
 #menuToggle span {
   display: block;
   width: 30px;
@@ -435,25 +511,170 @@ nav {
     left: 0.5vw;
   }
 
-  .language {
-    display: block;
-    margin-left: 10px;
-  }
-
-  .language p {
-    font-family: Helvetica Neue, Arial, sans-serif;
-    font-weight: 500;
-  }
-
   #menu {
-    margin: -120px 0 0 0px;
+        margin: -150px 0 0 0px;
   }
 
   /****************** DESKTOP MENU END *********************/
 }
 
 
+  /****************** BUTTON START *********************/
 
+$buttonBgColor: #000000;
+$buttonTextColor: #ffffff;
+$buttonFontSizeSm: 12px;
+
+
+button {
+  background-color: $buttonBgColor;
+  color: $buttonTextColor;
+  font-family: "manroperegular";
+  text-transform: uppercase;
+  border: none;
+  padding: 10px;
+  font-size: $buttonFontSizeSm;
+  width: 100%;
+}
+
+.wp-block-buttons {
+  font-family: "manroperegular";
+  text-transform: uppercase;
+  color: black;
+  padding: 10px 0 40px 0;
+}
+
+.wp-block-button__link {
+  color: black !important;
+}
+
+.newsletter {
+  button {
+    background-color: #e3e3e3;
+  }
+}
+
+ /****************** BUTTON END *********************/
+
+
+
+
+
+/* SUSTAINABILITY START*/
+
+#sustainability {
+  position: relative;
+  margin: 24vw 0vw 0vw 0vw;
+  .sustainability_picture_container {
+    display: none;
+  }
+  .sustainability_h1 {
+    margin-top: 6vw;
+    margin-bottom: 2vw;
+  }
+
+  .sustainability_col {
+    h1,
+    p {
+      margin: 4vw;
+    }
+  }
+}
+
+/*Sustainability desktop start*/
+  #sustainability {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-left: 0;
+    margin-right: 0;
+
+    .sustainability_picture_container {
+      height: 100vh;
+    }
+
+    .sustainability_col {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h1 {
+        margin-bottom: 0vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+      }
+      p {
+        margin-top: 2vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+      }
+    }
+    .sus_pic {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      right: unset;
+    }
+    .sustainability_col {
+      h1 {
+        margin-bottom: 0vw;
+        margin-left: 12vw;
+        margin-right: 12vw;
+      }
+      p {
+        margin-top: 2vw;
+        margin-left: 12vw;
+        margin-right: 12vw;
+      }
+    }
+  }
+
+/*Sustainability ipad start*/
+  #sustainability {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+
+    .sustainability_image {
+      display: none;
+    }
+
+    .sustainability_picture_container,
+    .sustainability_text_container {
+      width: 50%;
+    }
+
+    .sustainability_picture_container {
+      height: 100vh;
+      position: relative;
+      display: block;
+      overflow: hidden;
+    }
+
+    .sustainability_col {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h1 {
+        margin-bottom: 0vw;
+        margin-left: 8vw;
+        margin-right: 8vw;
+      }
+      p {
+        margin-top: 2vw;
+        margin-left: 8vw;
+        margin-right: 8vw;
+      }
+    }
+    .sus_pic {
+      position: relative;
+      height: 100vh;
+      width: auto;
+    }
+  }
+  /*Sustainability ipad end*/
 
 
 
@@ -493,9 +714,7 @@ nav {
 //  position: fixed;
 //}
 //
-//figcaption {
-//  font-size: calc(0.5rem + 0.3vw);
-//}
+
 //
 //li,
 //a {
