@@ -15,26 +15,52 @@
   </head>
 
   <body>
-    <div class="cnt__nav">
-      <nav>
-        <ul>
-          <li><a href="index.html">Brandprofil</a></li>
-          <li><a href="styleguide.html">Style guide</a></li>
-          <li><a href="komponent.html">Komponent bibliotek</a></li>
-          <li><a href="designsystem.html">Designsystem</a></li>
-          <li><a href="mockups.html">Mockups</a></li>
-        </ul>
-      </nav>
-    </div>
 
-    <div id="cnt__nav-trigger">
-      <div class="nav-trigger">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+   <nav role="navigation" id="nav">
+      <div class="header-wrapper">
+
       </div>
-    </div>
+      <div id="menuToggle">
+        <!--
+      A fake / hidden checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+      -->
+        <input type="checkbox" />
+
+        <!--
+      Some spans to act as a hamburger.
+
+      They are acting like a real hamburger,
+      not that McDonalds stuff.
+      -->
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <!--
+      Too bad the menu has to be inside of the button
+      but hey, it's pure CSS magic.
+      -->
+        <ul id="menu">
+          <div class="contentBx">
+            <div class="label"><a href="index.html">BRANDPROFIL</a></div>
+          </div>
+          <div class="contentBx">
+            <div class="label"><a href="styleguide.html">STYLEGUIDE</a></div>
+          </div>
+          <div class="contentBx">
+            <div class="label"><a href="komponent.html">KOMPONENTBIBLIOTEK</a></div>
+          </div>
+           <div class="contentBx">
+            <div class="label"><a href="designsystem.html">DESIGNSYSTEM</a></div>
+          </div>
+           <div class="contentBx">
+            <div class="label"><a href="mockups.html">MOCKUPS</a></div>
+          </div>
+        </ul>
+      </div>
+    </nav>
 
     <section id="designsystem" class="designsystem py-5 px-4">
       <div class="container g-0">
