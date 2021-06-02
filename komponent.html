@@ -1,229 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="robots" content="noindex" />
     <title>SILFEN / Digital designmanual</title>
-    <meta name="description" content="" />
     <!-- Bootstrap CSS -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
 
     <link rel="icon" type="image/png" href="img/ssort.png" />
-  </head>
+</head>
 
-  <body>
-    <div class="cnt__nav">
-      <nav>
-        <ul>
-          <li><a href="index.html">Brandprofil</a></li>
-          <li><a href="styleguide.html">Style guide</a></li>
-          <li><a href="komponent.html">Komponent bibliotek</a></li>
-          <li><a href="designsystem.html">Designsystem</a></li>
-          <li><a href="mockups.html">Mockups</a></li>
-        </ul>
-      </nav>
-    </div>
-
-    <div id="cnt__nav-trigger">
-      <div class="nav-trigger">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
+<body>
 
     <section id="komponentbibliotek" class="komponentbibliotek py-5 px-4">
-      <div class="container g-0">
-        <div class="row g-0 justify-content-center align-items-left flex-wrap-reverse">
-          <div class="content-txt col-lg-8 text-left">
-            <h2>Komponent bibliotek</h2>
-            <p>
-              Vores komponent bibliotek består af en levende dokumentation for interface designet til websitet. Vi introducerer herunder websitets vigtigste molekyler; alt fra knapper, formularer,
-              dropdowns, brødkrummesti, notifikationer til navigation. Hver komponent er designet og kodet til at løse et specifikt UI-problem, såsom at præsentere en liste med muligheder, muliggøre
-              indsendelse af en formular, give feedback til brugeren og så videre. Disse er designet til at arbejde harmonisk sammen som dele af en større helhed.
-            </p>
-            <br />
-            <br />
-            <h3>Knapper</h3>
-            <p>Følgende vedrører udseende, størrelser og tilstande for vores knapper; Default, Focus, Expanded/Toggled/Selected, Disabled, Hover, Active.</p>
+        <div class="container g-0">
+            <div class="row g-0 justify-content-center align-items-left flex-wrap-reverse">
+                <div class="content-txt col-lg-8 text-left">
+                    <h2>Komponent bibliotek</h2>
+                    <p>
+                        Vores komponent bibliotek består af en levende dokumentation for interface designet til websitet. Vi introducerer herunder websitets vigtigste molekyler; alt fra knapper, formularer,
+                        dropdowns, brødkrummesti, notifikationer til navigation. Hver komponent er designet og kodet til at løse et specifikt UI-problem, såsom at præsentere en liste med muligheder, muliggøre
+                        indsendelse af en formular, give feedback til brugeren og så videre. Disse er designet til at arbejde harmonisk sammen som dele af en større helhed.
+                    </p>
+                    <br />
+                    <br />
+                    <div class="cnt__nav">
+                        <nav>
+                            <ul>
+                                <li><a href="#knapper">Knapper</a></li>
+                                <li><a href="#checkbox">Checkbox</a></li>
+                                <li><a href="#brødkrummesti">Brødkrummesti</a></li>
+                                <li><a href="#dropdown">Dropdown</a></li>
+                                <li><a href="#loading">Loading</a></li>
+                                <li><a href="#linkshtml">Links</a></li>
+                                <li><a href="#søgefelt">Søgefelt</a></li>
+                                <li><a href="#textinput">Textinput</a></li>
+                                <li><a href="#notifikationer">Notifikationer</a></li>
+                                <li><a href="#billeder">Billeder</a></li>
+                                <li><a href="#hero">Hero elementer</a></li>
+                                <li><a href="#slider">Slider</a></li>
+                                <li><a href="#navigation">Navigation</a></li>
+                                <li><a href="#filtrering">Filtrering</a></li>
+                                <li><a href="#login">Login</a></li>
+                                <li><a href="#formularer">Formularer</a></li>
+                            </ul>
+                        </nav>
+                    </div>
 
-            <button class="newsletter_button">SIGN UP!</button>
+                    <section id="knapper">
+                        <h3>Knapper</h3>
+                        <p>Følgende vedrører udseende, størrelser og tilstande for vores knapper; Default, Focus, Expanded/Toggled/Selected, Disabled, Hover, Active.</p>
 
-            <h4>Anvendelse</h4>
-            <p>Vi bruger knapper til at kommunikere handlinger, som brugeren kan foretage og giver således brugeren mulighed for at interagere med sitet.</p>
+                        <button class="newsletter_button">SIGN UP!</button>
+                        <br>
+                        <br>
+                        <h4>Anvendelse</h4>
+                        <p>Vi bruger knapper til at kommunikere handlinger, som brugeren kan foretage og giver således brugeren mulighed for at interagere med sitet.</p>
 
-            <h4>Retningslinjer</h4>
-            <p>
-              Hver side har en primær knap og eventuelle resterende opfordringer til handling repræsenteres som knapper med lavere vægt. Hver knapvariant har en bestemt funktion og dens design
-              signalerer dette. De forskellige varianter implementeres konsekvent på tværs af sitet og har således fokus på, at meddele de korrekte handlinger.
-              <br />
-              <br />
-              Primære knapper bruges til den vigtigste opfordring til handling på siden. Sekundære knapper bruges isoleret eller parres med en primær knap, når der er flere opfordringer til handling.
-              Den sekundære knap kan også bruges til underopgaver på en side, hvor der er en primær knap til hoved- og sluthandling.
-            </p>
-            <p>
-              En knaps tekstetiket er det vigtigste element på en knap, da den kommunikerer den handling, der udføres, når brugeren interagerer med den. Tekstetiketten er altid centreret. Som
-              hovedregel følger vores knapper tekstbredden og ellers er de placeret til venstre.
-            </p>
-            <br />
-            <br />
-            <h3>Checkbox</h3>
-            <h4>Anvendelse</h4>
-            <p>
-              Vi bruger afkrydsningsfelter til at få en bekræftelse fra brugeren. Aktivering eller deaktivering af afkrydsningsfeltets input indikerer således om brugeren accepterer de pågældende
-              vilkår.
-            </p>
+                        <h4>Retningslinjer</h4>
+                        <p>
+                            Hver side har en primær knap og eventuelle resterende opfordringer til handling repræsenteres som knapper med lavere vægt. Hver knapvariant har en bestemt funktion og dens design
+                            signalerer dette. De forskellige varianter implementeres konsekvent på tværs af sitet og har således fokus på, at meddele de korrekte handlinger.
+                            <br />
+                            <br />
+                            Primære knapper bruges til den vigtigste opfordring til handling på siden. Sekundære knapper bruges isoleret eller parres med en primær knap, når der er flere opfordringer til handling.
+                            Den sekundære knap kan også bruges til underopgaver på en side, hvor der er en primær knap til hoved- og sluthandling.
+                        </p>
+                        <p>
+                            En knaps tekstetiket er det vigtigste element på en knap, da den kommunikerer den handling, der udføres, når brugeren interagerer med den. Tekstetiketten er altid centreret. Som
+                            hovedregel følger vores knapper tekstbredden og ellers er de placeret til venstre.
+                        </p>
+                    </section>
+                    <br />
+                    <br />
+                    <section id="checkbox">
+                        <h3>Checkbox</h3>
+                        <h4>Anvendelse</h4>
+                        <p>
+                            Vi bruger afkrydsningsfelter til at få en bekræftelse fra brugeren. Aktivering eller deaktivering af afkrydsningsfeltets input indikerer således om brugeren accepterer de pågældende
+                            vilkår.
+                        </p>
 
-            <h4>Retningslinjer</h4>
-            <p>
-              Afkrydsningsfeltetiketter er placeret til højre for deres input. Hvis der er en afkrydsningsfelt gruppering, anbringes de lodret. Afkrydsningsfelter i en form placeres mindst 32 pixel
-              under eller før den næste komponent. Afstand på 24 pixel eller 16 pixel bruges også, når pladsen er mere begrænset, eller hvis formularen er mere kompleks. Teksten placeres ved siden af
-              afkrydsningsfeltet, så kontrolelementet og etiketten er topjusteret.
-            </p>
-            <br />
-            <br />
-            <h3>Brødkrummesti</h3>
-            <h4>Anvendelse</h4>
-            <p>Vi bruger en brødkrummesti til at vise brugerne deres aktuelle placering i forhold til informationsarkitekturen og giver dem mulighed for hurtigt at tilgå forrige trin.</p>
+                        <h4>Retningslinjer</h4>
+                        <p>
+                            Afkrydsningsfeltetiketter er placeret til højre for deres input. Hvis der er en afkrydsningsfelt gruppering, anbringes de lodret. Afkrydsningsfelter i en form placeres mindst 32 pixel
+                            under eller før den næste komponent. Afstand på 24 pixel eller 16 pixel bruges også, når pladsen er mere begrænset, eller hvis formularen er mere kompleks. Teksten placeres ved siden af
+                            afkrydsningsfeltet, så kontrolelementet og etiketten er topjusteret.
+                        </p>
+                        <figcaption>Checkbox valgt og ikke-valgt</figcaption>
+                    </section>
+                    <br />
+                    <br />
+                    <section id="brødkrummesti">
+                        <h3>Brødkrummesti</h3>
+                        <h4>Anvendelse</h4>
+                        <p>Vi bruger en brødkrummesti til at vise brugerne deres aktuelle placering i forhold til informationsarkitekturen og giver dem mulighed for hurtigt at tilgå forrige trin.</p>
 
-            <figcaption>Sidelink: Dirigerer brugere til forældreniveau-siden. Separator: Skelner tydeligt mellem hver side.</figcaption>
-            <br />
-            <h4>Retningslinjer</h4>
-            <p>Brødkrummestien placeres øverst til venstre på siden under navigationen, men over sidetitlen.</p>
-            <br />
-            <br />
-            <h3>Dropdown</h3>
-            <h4>Anvendelse</h4>
-            <p>Dropdownkomponenten bruges som en handling til at filtrere og sortere eksisterende indhold. Denne tillader brugeren at vælge en mulighed fra en liste.</p>
-            <br />
-            <br />
-            <h3>Loading</h3>
-            <h4>Anvendelse</h4>
-            <p>Loadingkomponenten bruges som en lækker feature, brugeren kan se på imens dataen indlæses.</p>
-            <br />
-            <br />
-            <h3>Links</h3>
-            <h4>Anvendelse</h4>
-            <p>Vi bruger links som navigationselementer, når den ønskede handling er at føre brugeren til en ny side. Disse er neongrønne, når der hovers.</p>
-            <br />
-            <br />
-            <h3>Søgefelt</h3>
-            <h4>Anvendelse</h4>
-            <p>Vi bruger søgefeltet som et filter til at hjælpe brugeren med at finde indhold.</p>
+                        <figcaption>Sidelink: Dirigerer brugere til forældreniveau-siden. Separator: Skelner tydeligt mellem hver side.</figcaption>
+                        <br />
+                        <h4>Retningslinjer</h4>
+                        <p>Brødkrummestien placeres øverst til venstre på siden under navigationen, men over sidetitlen.</p>
+                    </section>
+                    <br />
+                    <br />
+                    <section id="dropdown">
+                        <h3>Dropdown</h3>
+                        <h4>Anvendelse</h4>
+                        <p>Dropdownkomponenten bruges som en handling til at filtrere og sortere eksisterende indhold. Denne tillader brugeren at vælge en mulighed fra en liste.</p>
+                        <figcaption>Eksempel på dropdown</figcaption>
 
-            <figcaption>Herunder vises, hvordan søgefeltet folder sig ud. Vi angiver nyttig pladsholdertekst og medtager søgeikonet.</figcaption>
-            <br />
-            <br />
-            <h3>Textinput</h3>
-            <h4>Anvendelse</h4>
-            <p>
-              Tekstinput giver brugeren mulighed for at interagere med og indtaste indhold og data. Denne komponent kan bruges i lang og kort form. Størrelsen på tekstindtastningsfeltet afspejler
-              længden af det indhold, vi forventer, at brugeren skal indtaste.
-            </p>
-            <br />
-            <br />
-            <h3>Notifikationer</h3>
-            <h4>Anvendelse</h4>
-            <p>
-              Kommunikation med brugerne og øjeblikkelig feedback er vigtig for at opbygge tillid. Mens meddelelser er en effektiv metode til at kommunikere med brugerne, er de også forstyrrende,
-              hvorfor de bruges sparsomt.
-            </p>
-            <h4>Retningslinjer</h4>
-            <p>
-              Bredden og højden af indbyggede underretninger varierer afhængigt af indhold og layout. Vi placerer i nogle tilfælde et lille "x" i øverste højre hjørne, så det er muligt for brugeren at
-              lukke den integrerede underretning, hvis vedkommende ikke ønsker at interagere. Meddelelser glider ind og ud fra øverste højre hjørne af skærmen.
-            </p>
-            <br />
-            <br />
-            <h3>Billeder</h3>
-            <p>
-              Vores billeder underbygger vores emotionelle fortælling samt brugernes ønsker om at være sig selv, være stærk, stå ved sin identitet og sætte pris på venindebåndet. Atmosfæren er
-              naturlig, inviterende og virkelighedsnær.
-            </p>
-            <h4>Anvendelse</h4>
-            <p>
-              Vi gør brug af billeder til at skabe en stemning og/eller understrege en pointe. Det er vigtigt for os, at vi gennem vores billeder viser omgivelser og relationer, brugeren kan spejle
-              sig i.
-            </p>
-            <h4>Retningslinjer</h4>
-            <p>
-              Motiver skal altid fremstå positive og cool uden at føle sig iscenesatte eller unaturlige. Billederne skal tages i et æstetisk og inspirerende miljø, hvor der ikke er for mange
-              forstyrrende elementer, der overskygger motivet. Dybdeskarphed kan hjælpe med at lægge vægt på motivet. Billederne skal fremstå så naturlige som muligt, hvorfor dagslys er essentielt,
-              ligeledes manipuleres disse ikke med effekter eller filtre.
-            </p>
-            <br />
-            <br />
-            <h3>Hero elementer</h3>
-            <h3>Sliders</h3>
-            <h3>Billedgallerier</h3>
-            <h3>Articles</h3>
-            <br />
-            <br />
-            <h3>Navigation</h3>
-            <figcaption>Screenshot af hovednavigation</figcaption>
-            <br />
-            <br />
-            <h3>Filtering</h3>
-            <h4>Anvendelse</h4>
-            <p>
-              Filtrering hjælper brugerne med at finde noget, de leder efter, se tilgængelige muligheder inden for et bestemt sæt kriterier og træffe en beslutning, når de står over for et stort antal
-              muligheder. Vi har valgt at inddrage filtrering i shoppen, da det forbedrer brugervenligheden og brugernes effektivitet.
-            </p>
-            <br />
-            <br />
-            <h3>Login</h3>
-            <br />
-            <br />
-            <h3>Formularer</h3>
-            <h4>Anvendelse</h4>
-            <p>Vi gør brug af formularer, så brugeren kan signe up til nyhedsbrev, oprette en bruger eller logge ind på sin konto, købe et produkt, ansøge om samarbejde etc.</p>
+                    </section>
+                    <br />
+                    <br />
+                    <section id="loading">
+                        <h3>Loading</h3>
+                        <h4>Anvendelse</h4>
+                        <p>Loadingkomponenten bruges som en lækker feature, brugeren kan se på imens dataen indlæses.</p>
+                        <figcaption>Loadinganimation</figcaption>
+                    </section>
+                    <br />
+                    <br />
+                    <section id="links">
+                        <h3>Links</h3>
+                        <h4>Anvendelse</h4>
+                        <p>Vi bruger links som navigationselementer, når den ønskede handling er at føre brugeren til en ny side. Disse er neongrønne, når der hovers.</p>
+                        <figcaption>Visning af links ved hover</figcaption>
+                    </section>
+                    <br />
+                    <br />
+                    <section id="søgefelt">
+                        <h3>Søgefelt</h3>
+                        <h4>Anvendelse</h4>
+                        <p>Vi bruger søgefeltet som et filter til at hjælpe brugeren med at finde indhold.</p>
 
-            <figcaption>
-              Etiketter: Inputetiketter hjælper brugerne med at forstå, hvad den tilsvarende input betyder.
-              <br />
-              Labels: Effektiv formmærkning hjælper brugerne med at forstå, hvilke oplysninger, der skal indtastes i et tekstinput.
-              <br />
-              Tekstinput: Gør det muligt for brugere at indtaste tekst i fri form.
-              <br />
-              Dataindgange: Information kan også indtastes gennem en række ikke-frie formularindtastningsfelter (f.eks. afkrydsningsfelter eller dropdowns)
-              <br />
-              Hjælp: Giver vejledning i kontekst som værktøjstip, eller hjælpetekst for at hjælpe brugeren med at give de rigtige oplysninger.
-              <br />
-              Knapper: Tillader brugere at indsende eller afslutte en formular.
-            </figcaption>
+                        <figcaption>Herunder vises, hvordan søgefeltet folder sig ud. Vi angiver nyttig pladsholdertekst og medtager søgeikonet.</figcaption>
+                    </section>
+                    <br />
+                    <br />
+                    <section id="textinput">
+                        <h3>Textinput</h3>
+                        <h4>Anvendelse</h4>
+                        <p>
+                            Tekstinput giver brugeren mulighed for at interagere med og indtaste indhold og data. Denne komponent kan bruges i lang og kort form. Størrelsen på tekstindtastningsfeltet afspejler
+                            længden af det indhold, vi forventer, at brugeren skal indtaste.
+                            <figcaption>Eksempel på inputfelt</figcaption>
+                        </p>
+                    </section>
+                    <br />
+                    <br />
+                    <section id="notifikationer">
+                        <h3>Notifikationer</h3>
+                        <h4>Anvendelse</h4>
+                        <p>
+                            Kommunikation med brugerne og øjeblikkelig feedback er vigtig for at opbygge tillid. Mens meddelelser er en effektiv metode til at kommunikere med brugerne, er de også forstyrrende,
+                            hvorfor de bruges sparsomt.
+                        </p>
+                        <figcaption>Meddelelse om, at der er tilføjet en varer til kurv
+                        </figcaption>
+                        <figcaption>Meddelelse om, at der er signet op til nyhedsbrev
 
-            <figcaption>I mobilversion gør vi brug af pladsholdertekst i stedet for en etiket, da det er pladsbesparende.</figcaption>
-          </div>
+                        </figcaption>
+                        <figcaption>Meddelelse om, at der er gemt en vare i wishlist
+
+                        </figcaption>
+                        <h4>Retningslinjer</h4>
+                        <p>
+                            Bredden og højden af indbyggede underretninger varierer afhængigt af indhold og layout. Vi placerer i nogle tilfælde et lille "x" i øverste højre hjørne, så det er muligt for brugeren at
+                            lukke den integrerede underretning, hvis vedkommende ikke ønsker at interagere. Meddelelser glider ind og ud fra øverste højre hjørne af skærmen.
+                        </p>
+                    </section>
+                    <br />
+                    <br />
+                    <section id="billeder">
+                        <h3>Billeder</h3>
+                        <p>
+                            Vores billeder underbygger vores emotionelle fortælling samt brugernes ønsker om at være sig selv, være stærk, stå ved sin identitet og sætte pris på venindebåndet. Atmosfæren er
+                            naturlig, inviterende og virkelighedsnær.
+                        </p>
+                        <h4>Anvendelse</h4>
+                        <p>
+                            Vi gør brug af billeder til at skabe en stemning og/eller understrege en pointe. Det er vigtigt for os, at vi gennem vores billeder viser omgivelser og relationer, brugeren kan spejle
+                            sig i.
+                        </p>
+                        <h4>Retningslinjer</h4>
+                        <p>
+                            Motiver skal altid fremstå positive og cool uden at føle sig iscenesatte eller unaturlige. Billederne skal tages i et æstetisk og inspirerende miljø, hvor der ikke er for mange
+                            forstyrrende elementer, der overskygger motivet. Dybdeskarphed kan hjælpe med at lægge vægt på motivet. Billederne skal fremstå så naturlige som muligt, hvorfor dagslys er essentielt,
+                            ligeledes manipuleres disse ikke med effekter eller filtre.
+                        </p>
+                        <figcaption>Eksempler på billeder</figcaption>
+                    </section>
+                    <br />
+                    <br />
+                    <section id="hero">
+                        <h3>Hero elementer</h3>
+                    </section>
+                    <br />
+                    <br />
+                    <section id="slider">
+                        <h3>Slider</h3>
+
+                        <figcaption>Eksempel på slider</figcaption>
+                    </section>
+                    <br />
+                    <br />
+                    <section id="navigation">
+                        <h3>Navigation</h3>
+                        <figcaption>Screenshot af hovednavigation</figcaption>
+                    </section>
+                    <br />
+                    <br />
+                    <section id="filtrering">
+                        <h3>Filtering</h3>
+                        <h4>Anvendelse</h4>
+                        <p>
+                            Filtrering hjælper brugerne med at finde noget, de leder efter, se tilgængelige muligheder inden for et bestemt sæt kriterier og træffe en beslutning, når de står over for et stort antal
+                            muligheder. Vi har valgt at inddrage filtrering i shoppen, da det forbedrer brugervenligheden og brugernes effektivitet.
+
+                            <figcaption>Filtreringsmenu ses lukket og udfoldet
+                            </figcaption>
+                        </p>
+                    </section>
+                    <br />
+                    <br />
+                    <section id="login">
+                        <h3>Login</h3>
+                    </section>
+                    <br />
+                    <br />
+                    <section id="formularer">
+                        <h3>Formularer</h3>
+                        <h4>Anvendelse</h4>
+                        <p>Vi gør brug af formularer, så brugeren kan signe up til nyhedsbrev, oprette en bruger eller logge ind på sin konto, købe et produkt, ansøge om samarbejde etc.</p>
+
+                        <figcaption>
+                            Etiketter: Inputetiketter hjælper brugerne med at forstå, hvad den tilsvarende input betyder.
+                            <br />
+                            Labels: Effektiv formmærkning hjælper brugerne med at forstå, hvilke oplysninger, der skal indtastes i et tekstinput.
+                            <br />
+                            Tekstinput: Gør det muligt for brugere at indtaste tekst i fri form.
+                            <br />
+                            Dataindgange: Information kan også indtastes gennem en række ikke-frie formularindtastningsfelter (f.eks. afkrydsningsfelter eller dropdowns)
+                            <br />
+                            Hjælp: Giver vejledning i kontekst som værktøjstip, eller hjælpetekst for at hjælpe brugeren med at give de rigtige oplysninger.
+                            <br />
+                            Knapper: Tillader brugere at indsende eller afslutte en formular.
+                        </figcaption>
+
+                        <figcaption>I mobilversion gør vi brug af pladsholdertekst i stedet for en etiket, da det er pladsbesparende.</figcaption>
+                    </section>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="/https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script
-      src="/https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="/https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="/gsap.min.js"></script>
-    <script src="/ScrollTrigger.min.js"></script>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script
+          src="/https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+          integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="/https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+          integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+          crossorigin="anonymous"
+        ></script>
+        <script src="/gsap.min.js"></script>
+        <script src="/ScrollTrigger.min.js"></script>
 
     <script type="module" src="/main.js"></script>
-  </body>
+     <script type="module" src="/script.js"></script>
+</body>
+
 </html>
